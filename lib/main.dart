@@ -38,7 +38,6 @@ class _MyAppState extends State<MyApp> {
         backgroundColor: AppColors.n8,
       ),
     );
-    ;
   }
 }
 

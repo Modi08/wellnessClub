@@ -6,7 +6,7 @@ class AppColors {
   static const color3 = Color.fromARGB(255, 255, 115, 0);
   static const color4 = Color(0xFF7ADB78);
   static const color5 = Color(0xFF858DFF);
-  static const color6 = Color(0xFF98E2);
+  static const color6 = Color(0x00ff98e2);
 
   static const stroke1 = Color(0xFF9BECfA);
 

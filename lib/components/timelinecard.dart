@@ -27,7 +27,7 @@ class EventCard extends StatelessWidget {
               textAlign: TextAlign.center,
               softWrap: true,
             ),
-            SizedBox(height: height * 0.02),
+            SizedBox(height: height * 0.01),
           ],
         ),
       );
@@ -55,7 +55,7 @@ class EventCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: height * 0.03),
+                SizedBox(height: height * 0.015),
                 SizedBox(
                   width: width * 0.3,
                   child: Column(

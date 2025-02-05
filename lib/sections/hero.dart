@@ -29,6 +29,7 @@ class _HeroSectionState extends State<HeroSection> {
                   width: widget.width,
                   height: widget.height)
               .h1(),
+          textAlign: TextAlign.center,
         )),
       ),
     );

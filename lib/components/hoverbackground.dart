@@ -41,7 +41,7 @@ class _HoverImageState extends State<HoverImageBackground> {
               duration: const Duration(milliseconds: 200),
               child: Stack(
                 children: [
-                  Container(
+                  SizedBox(
                     width: widget.width * 0.35,
                     height: widget.height * 0.3,
                     child: Opacity(

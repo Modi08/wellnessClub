@@ -3,21 +3,22 @@ import 'package:flutter/material.dart';
 class AppColors {
   static const color1 = Color.fromARGB(255, 157, 79, 252);
   static const color2 = Color.fromARGB(255, 239, 255, 14);
-  static const color3 = Color.fromARGB(255, 255, 115, 0);
-  static const color4 = Color(0xFF7ADB78);
+  static const color3 = Color.fromARGB(255, 69, 231, 199);
+  static const color4 = Color.fromARGB(255, 192, 232, 224);
   static const color5 = Color(0xFF858DFF);
   static const color6 = Color(0x00ff98e2);
+  static const textColor = Color.fromRGBO(0, 0, 0, 1);
 
   static const stroke1 = Color(0xFF9BECfA);
 
-  static const n1 = Color(0xFFFFFFFF);
-  static const n2 = Color(0xFFE0FFFF);
+  static const n1 = Color.fromARGB(255, 0, 0, 0);
+  static const n2 = Color.fromARGB(255, 63, 175, 200);
   static const n3 = Color(0xFF03FCDB);
   static const n4 = Color(0xFFADD8E6);
   static const n5 = Color(0xFF87CEEB);
   static const n6 = Color(0xFF6495ED);
   static const n7 = Color(0xFF4682B4);
-  static const n8 = Color.fromARGB(255, 0, 152, 207);
+  static const n8 = Color.fromARGB(223, 248, 248, 248);
   static const n9 = Color(0xFFAE57FF);
   static const n10 = Color(0xFF708090);
   static const n11 = Color(0xFF2F4F4F);

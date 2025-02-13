@@ -29,10 +29,10 @@ class _PanelState extends State<Panel> {
                 height: 2.5,
                 width: widget.width,
                 decoration: BoxDecoration(
-                    color: const Color.fromRGBO(255, 255, 255, 1),
+                    color: AppColors.textColor,
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                        color: const Color.fromRGBO(255, 255, 255, 1))))
+                        color: AppColors.textColor)))
             : SizedBox(height: 2.5),
         const SizedBox(height: 15)
       ],

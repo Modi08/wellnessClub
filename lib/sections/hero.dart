@@ -20,7 +20,7 @@ class _HeroSectionState extends State<HeroSection> {
         height: widget.width * 0.55,
         decoration: BoxDecoration(
             border: Border.all(color: Colors.black),
-            image: DecorationImage(image: backgroundImage, fit: BoxFit.cover)),
+            image: DecorationImage(image: backgroundImage, fit: BoxFit.cover, opacity: 0.75)),
         child: Center(
             child: Text(
           "Welcome to the ISA Wellness Club",

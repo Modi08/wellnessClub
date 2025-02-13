@@ -19,7 +19,7 @@ class EventCard extends StatelessWidget {
       return SizedBox(
         width: width * 0.3,
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               item,
@@ -43,7 +43,7 @@ class EventCard extends StatelessWidget {
         Padding(
             padding: EdgeInsets.all(width * 0.00833),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -59,7 +59,7 @@ class EventCard extends StatelessWidget {
                 SizedBox(
                   width: width * 0.3,
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: bulletpointWidget,
                   ),
                 ),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wellnessclub/Sections/homePage/hero.dart';
 import 'package:wellnessclub/components/circularLayout.dart';
-import 'package:wellnessclub/constants/theme.dart';
 import 'package:wellnessclub/sections/challengesPage/centerPiece.dart';
 import 'package:wellnessclub/sections/homePage/impact.dart';
 import 'package:wellnessclub/sections/homePage/intro.dart';
@@ -39,38 +38,24 @@ class ChallengePage extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
 
-    List<Widget> circles = [Container(width: width * 0.15,
-      height: width * 0.05,
-      decoration:
-          BoxDecoration(shape: BoxShape.circle, color: AppColors.color5),),
-          Container(width: width * 0.15,
-      height: width * 0.05,
-      decoration:
-          BoxDecoration(shape: BoxShape.circle, color: AppColors.color5),),
-          Container(width: width * 0.15,
-      height: width * 0.05,
-      decoration:
-          BoxDecoration(shape: BoxShape.circle, color: AppColors.color5),),
-          Container(width: width * 0.15,
-      height: width * 0.05,
-      decoration:
-          BoxDecoration(shape: BoxShape.circle, color: AppColors.color5),),
-          Container(width: width * 0.15,
-      height: width * 0.05,
-      decoration:
-          BoxDecoration(shape: BoxShape.circle, color: AppColors.color5),),
-          Container(width: width * 0.15,
-      height: width * 0.05,
-      decoration:
-          BoxDecoration(shape: BoxShape.circle, color: AppColors.color5),)];
-
     return SingleChildScrollView(
       child: SizedBox(
-        height: height - 75,
+        height: (height - 75),
         width: width,
-        child: Stack(alignment: AlignmentDirectional.center, children: [
-          CenterPiece(height: height, width: width),
-          CircularLayout(radius: width*0.1, height: height, width: width, children: circles)
+        child: Stack(alignment: AlignmentDirectional.topCenter, children: [
+          Column(children: [
+            const Spacer(),
+            CenterPiece(height: height, width: width),
+            const Spacer()
+          ]),
+          Column(
+            children: [
+              const Spacer(),
+              CircularLayout(
+                  radius: width * 0.175, height: height - 75, width: width),
+              const Spacer(),
+            ],
+          ),
         ]),
       ),
     );

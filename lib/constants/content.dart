@@ -28,6 +28,24 @@ List<Map<String, dynamic>> timeline = [
 List<List<String>> impacts = [
   ["Overf", "500t", "students participatedf", "in our eventsf"],
   ["Reduced reportedf", "stress levels byf", "15%t", "over two yearsf"],
-  ["Awarded thef", " \"Innovative Wellbeing Initiative\"f", " by [Local Organization]t"],
-  ["Successfully implementedf", " scalable mental health solutionsf", " for schools acrossf", " Amsterdamt"]
+  [
+    "Awarded thef",
+    " \"Innovative Wellbeing Initiative\"f",
+    " by [Local Organization]t"
+  ],
+  [
+    "Successfully implementedf",
+    " scalable mental health solutionsf",
+    " for schools acrossf",
+    " Amsterdamt"
+  ]
+];
+
+List<List<String>> challenges = [
+  ["Sleep challenges", "https://pub.dev/packages/url_launcher/install"],
+  ["Coming soon", "..."],
+  ["Coming soon", "..."],
+  ["Coming soon", "..."],
+  ["Coming soon", "..."],
+  ["Coming soon", "..."]
 ];

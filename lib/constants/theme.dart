@@ -24,7 +24,7 @@ class AppColors {
   static const n11 = Color(0xFF2F4F4F);
   static const n12 = Color.fromARGB(255, 126, 126, 126);
   static const n13 = Color(0xFF808080);
-  static const n14 = Color(0xFFE3E3E3);
+  static const n14 = Color.fromARGB(255, 255, 255, 255);
 }
 
 class AppTextStyle {
@@ -68,7 +68,7 @@ class AppTextStyle {
 
   TextStyle h6() {
     return TextStyle(
-      fontSize: 14,
+      fontSize: ((width / height) * 10) + 2.5,
       height: 8 / 14,
       fontWeight: FontWeight.w600,
     );

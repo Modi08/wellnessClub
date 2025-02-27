@@ -4,7 +4,6 @@ import 'package:wellnessclub/constants/images.dart';
 import 'package:wellnessclub/constants/theme.dart';
 
 AppBar header(int pageSelected, Function selectPage) {
-  
   return AppBar(
       toolbarHeight: 75,
       leadingWidth: 0,
@@ -25,7 +24,7 @@ AppBar header(int pageSelected, Function selectPage) {
                   selectPage(0);
                 },
                 child: Panel(
-                    title: "Our Initiatives",
+                    title: "Our Journey",
                     width: 125,
                     selected: pageSelected == 0)),
           ],
@@ -38,8 +37,8 @@ AppBar header(int pageSelected, Function selectPage) {
                   selectPage(1);
                 },
                 child: Panel(
-                    title: "Progress & Achievements",
-                    width: 225,
+                    title: "Challenges",
+                    width: 125,
                     selected: pageSelected == 1)),
           ],
         ),
@@ -51,9 +50,7 @@ AppBar header(int pageSelected, Function selectPage) {
                   selectPage(2);
                 },
                 child: Panel(
-                    title: "Articles About Sleep",
-                    width: 175,
-                    selected: pageSelected == 2)),
+                    title: "Impact", width: 100, selected: pageSelected == 2)),
           ],
         ),
         const Spacer()

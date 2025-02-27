@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wellnessclub/Sections/hero.dart';
 import 'package:wellnessclub/constants/theme.dart';
+import 'package:wellnessclub/pages.dart';
 import 'package:wellnessclub/sections/header.dart';
-import 'package:wellnessclub/sections/impact.dart';
-import 'package:wellnessclub/sections/intro.dart';
-import 'package:wellnessclub/sections/journey.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +16,11 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int pageSelected = 0;
+  List<Widget> pages = [
+    HomePage(),
+    ChallengePage(),
+    ImpactPage()
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -28,42 +30,13 @@ class _MyAppState extends State<MyApp> {
       });
     }
 
-    // ignore: non_constant_identifier_names
     AppBar Header = header(pageSelected, selectPage);
 
     return MaterialApp(
       home: Scaffold(
         appBar: Header,
-        body: HomePage(),
+        body: pages[pageSelected],
         backgroundColor: AppColors.n8,
-      ),
-    );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.height;
-
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          HeroSection(
-            width: width,
-            height: height,
-          ),
-          InrtoductionSection(width: width, height: height),
-          JourneySection(width: width, height: height),
-          OurImpactSection(width: width, height: height)
-        ],
       ),
     );
   }

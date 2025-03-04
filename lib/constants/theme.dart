@@ -68,7 +68,7 @@ class AppTextStyle {
 
   TextStyle h6() {
     return TextStyle(
-      fontSize: ((width / height) * 10) + 2.5,
+      fontSize: ((width / height) * 7.5) + 2.5,
       height: 8 / 14,
       fontWeight: FontWeight.w600,
     );
@@ -83,7 +83,7 @@ class AppTextStyle {
 
   TextStyle body2() {
     return TextStyle(
-      fontSize: ((width / height) * 7) + 2.5,
+      fontSize: ((width / height) * 5) + 2.5,
       fontWeight: FontWeight.w300,
     );
   }

@@ -3,7 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 String path = "assets/";
 
-SvgPicture wellnessclubSymbol = SvgPicture.asset("${path}wellness-symbol.svg");
+SvgPicture wellnessclubSymbol = SvgPicture.asset("${path}wellnessClubLogo.svg");
+
+
 AssetImage backgroundImage = AssetImage("hero/background.jpeg");
 
 Image journeyImage1 = Image.asset(

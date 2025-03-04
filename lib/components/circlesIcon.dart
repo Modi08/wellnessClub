@@ -32,7 +32,7 @@ class CircleIcon extends StatelessWidget {
                   height: height, width: width, elementColor: AppColors.n1)
               .h6(),
         ),
-        Spacer(flex: 1),
+        Spacer(flex: 2),
         ElevatedButton(
           onPressed: () {
             launchUrl(link);
